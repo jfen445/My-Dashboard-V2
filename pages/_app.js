@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 // import type { AppProps } from 'next/app';
+import Time from "../components/CurrentTimeComponent";
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import {
@@ -13,6 +14,7 @@ import {
   XIcon,
   MusicNoteIcon,
 } from "@heroicons/react/outline";
+import profileImage from "../images/profileImage.jpg";
 import Image from "next/image";
 
 const navigation = [
@@ -199,13 +201,13 @@ export default function MyApp({ Component, pageProps }) {
               <a href="#" className="flex-shrink-0 w-full group block">
                 <div className="flex items-center">
                   <div>
-                    {/* <Image
+                    <Image
                       className="inline-block h-9 w-9 rounded-full"
-                      src={"/../images/profileImage.jpg"}
+                      src={profileImage}
                       alt=""
-                      width={100}
-                      height={100}
-                    /> */}
+                      width={50}
+                      height={50}
+                    />
                   </div>
                   <div className="ml-3">
                     <p className="text-sm font-medium text-white">
@@ -237,7 +239,7 @@ export default function MyApp({ Component, pageProps }) {
                 <h1 className="text-4xl font-semibold text-gray-900">
                   My Dashboard
                 </h1>
-                {/* <Time /> */}
+                <Time />
               </div>
               <div className="fpy-4">
                 <Component {...pageProps} />
