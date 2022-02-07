@@ -13,8 +13,7 @@ const Button = styled.button`
 export const spotifyObject = new SpotifyWebApi();
 
 export const authEndpoint = "https://accounts.spotify.com/authorize";
-const redirectURI = "http://localhost:3000/music";
-const clientID = "66ea4aba7f9344fea526f6a5bf14d6bf";
+const redirectURI = process.env.NEXT_PUBLIC_SPOTIFY_REDIRECT_URL;
 
 const scopes = [
   "user-read-currently-playing",
