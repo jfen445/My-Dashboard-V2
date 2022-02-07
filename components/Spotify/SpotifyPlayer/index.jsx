@@ -23,7 +23,6 @@ function SpotifyPlayer() {
   const [skip, setSkip] = useState(false); // play pause image
   const [albumImages, setAlbumImages] = useState([]);
 
-  console.log("slippipip", skip);
   React.useEffect(() => {
     console.log("going throguh");
     spotifyObject

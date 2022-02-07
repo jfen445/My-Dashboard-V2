@@ -37,7 +37,7 @@ export const getTokenFromResponse = () => {
 };
 
 export const musisAccessUrl = `${authEndpoint}?client_id=${
-  process.env.SPOTIFY_CLIENT_ID
+  process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID
 }&redirect_uri=${redirectURI}&scope=${scopes.join(
   "%20"
 )}&response_type=token&show_dialog=true`;
