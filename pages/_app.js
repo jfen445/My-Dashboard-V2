@@ -142,9 +142,9 @@ export default function MyApp({ Component, pageProps }) {
                         <p className="text-base font-medium text-white">
                           Joshua Feng
                         </p>
-                        <p className="text-sm font-medium text-gray-400 group-hover:text-gray-300">
+                        {/* <p className="text-sm font-medium text-gray-400 group-hover:text-gray-300">
                           View profile
-                        </p>
+                        </p> */}
                       </div>
                     </div>
                   </a>
@@ -162,16 +162,8 @@ export default function MyApp({ Component, pageProps }) {
           {/* Sidebar component, swap this element with another sidebar if you like */}
           <div className="flex-1 flex flex-col min-h-0 bg-gray-800">
             <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
-              <div className="flex items-center flex-shrink-0 px-4">
-                <Image
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-                  alt="Workflow"
-                  width={100}
-                  height={100}
-                />
-              </div>
-              <nav className="mt-5 flex-1 px-2 space-y-1">
+              <div className="flex items-center flex-shrink-0 px-4"></div>
+              <nav className="mt-3 flex-1 px-2 space-y-1">
                 {navigation.map((item) => (
                   <a
                     key={item.name}
@@ -214,7 +206,7 @@ export default function MyApp({ Component, pageProps }) {
                       Joshua Feng
                     </p>
                     <p className="text-xs font-medium text-gray-300 group-hover:text-gray-200">
-                      View profile
+                      Software Engineer
                     </p>
                   </div>
                 </div>
@@ -235,7 +227,7 @@ export default function MyApp({ Component, pageProps }) {
           </div>
           <main className="flex-1">
             <div className="py-6">
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="max-w-7xl mx-auto px-8 sm:px-6 lg:px-8">
                 <h1 className="text-4xl font-semibold text-gray-900">
                   My Dashboard
                 </h1>

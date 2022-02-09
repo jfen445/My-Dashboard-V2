@@ -13,6 +13,9 @@ module.exports = {
                     10: "#ECF2F9",
                 },
             },
+            backgroundImage: {
+                mountain: "url('/images/mountain.jpg')",
+            },
         },
     },
     plugins: [],

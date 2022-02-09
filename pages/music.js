@@ -6,7 +6,7 @@ function MusicPage() {
   return (
     <>
       <div className="fpy-4 sm:px-6 md:px-8">
-        <div className="flex flex-row border-4 border-dashed border-gray-200 rounded-lg h-80px">
+        <div className="flex flex-row rounded-lg h-80px">
           {/* LHS box */}
           <div
             className="flex-auto w-32 align-items: center sm:px-6 md:px-8 bg-primary-blue-15 order-4 border-dashed border-gray-200 rounded-lg"
