@@ -1,6 +1,10 @@
 {
     "name": "my-dashboard",
     "private": true,
+    "engines": {
+        "node": "14.15.3",
+        "npm": "6.13.7"
+    },
     "scripts": {
         "dev": "next dev",
         "build": "next build",
@@ -13,11 +17,16 @@
         "@material-ui/core": "^4.12.3",
         "axios": "^0.21.1",
         "finnhub": "^1.2.9",
+        "fullcalendar": "^5.10.2",
+        "googleapis": "^95.0.0",
         "moment": "^2.29.1",
-        "next": "12.0.10",
+        "moment-range": "4.0.2",
+        "next": "^12.0.10",
         "react": "17.0.2",
+        "react-big-calendar": "0.20.4",
         "react-dom": "17.0.2",
         "react-elastic-carousel": "^0.11.5",
+        "react-google-calendar-api": "^1.5.2",
         "spotify-web-api-js": "^1.5.2",
         "styled-components": "^5.3.3"
     },

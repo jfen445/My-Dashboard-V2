@@ -19,7 +19,7 @@ const Weather = () => {
   return (
     <>
       <Fragment>
-        <div className="w-full">
+        <div className="w-full" style={{ width: "50%" }}>
           <div className={`position-relative`}>
             {/* Form */}
             {!isLoading && <Form submitSearch={onSubmit} />}
